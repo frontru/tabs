@@ -1,0 +1,88 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Montserrat;
+  background: #f3f4fb;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+
+.tabs__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0px 4px 5px rgba(0,0,0,.1);
+  border-radius: 30px;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+
+.tabs__toggle {
+  margin: 0 5px;
+  padding: 7px 25px;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.tabs__name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #484848;
+}
+
+.tabs__body {
+  background: #fff;
+  box-shadow: 0px 4px 5px rgba(0,0,0,.1);
+  border-radius: 25px;
+  padding: 30px;
+  position: relative;
+}
+
+.tabs__title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #484848;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tabs__text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #484848;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__toggle.is-active {
+  background: #e7eef8;
+}
+
+.tabs__toggle.is-active .tabs__name {
+  color: #2a61d8;
+}
+
+.tabs__content.is-active {
+  display: block;
+}
